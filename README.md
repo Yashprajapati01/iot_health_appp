@@ -104,17 +104,8 @@ Once Bluetooth or Wi-Fi is enabled, the app scans for nearby devices and allows 
 After successfully connecting to a device, the app starts fetching data like Heart Rate, SpO2, and Temperature, and displays it in real-time using Syncfusion Flutter Charts.
 4. Add Device:
 Users can add devices by entering a device name and selecting the connection type (Bluetooth or Wi-Fi) through a clean and intuitive dialog.
-🚧 Potential Improvements
-Firebase Integration:
 
-Add Firebase or a similar real-time database to store historical health data and sync across devices.
-Machine Learning Predictions:
-
-Implement predictive analytics on health metrics like heart rate trends, SpO2 levels, etc., using machine learning models.
-User Authentication:
-
-Add user authentication and personalized health data storage.
-📸 Screenshots
+---
 
 💻 Contributors
 Yash - Developer, Architect
