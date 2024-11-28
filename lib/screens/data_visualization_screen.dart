@@ -156,9 +156,8 @@ class _DataVisualizationScreenState extends State<DataVisualizationScreen> {
 }
 
 class ChartData {
-  final double x; // Represents time or data index
-  final double
-      y; // Represents sensor value (e.g., heart rate, SpO2, temperature)
+  final double x;
+  final double y;
 
   ChartData(this.x, this.y);
 }

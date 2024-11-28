@@ -18,18 +18,18 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: appTheme,
-      initialRoute: '/', // Set the home route
+      initialRoute: '/',
       routes: {
-        '/': (context) => HomeScreen(), // Home Screen Route
+        '/': (context) => HomeScreen(),
         '/device-list': (context) => DeviceListScreen(
               connectionType:
                   ModalRoute.of(context)?.settings.arguments as String,
-            ), // Device List Screen Route
+            ),
         '/bluetooth-scanning': (context) => BluetoothScanScreen(),
         '/wifi-scanning': (context) => WifiScanScreen(),
         '/data-visualization': (context) => DataVisualizationScreen(
               device: ModalRoute.of(context)?.settings.arguments as Device,
-            ), // Data Visualization Screen Route
+            ),
       },
     );
   }

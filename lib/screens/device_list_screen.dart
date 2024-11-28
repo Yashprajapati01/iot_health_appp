@@ -17,14 +17,13 @@ class _DeviceListScreenState extends State<DeviceListScreen> {
   @override
   void initState() {
     super.initState();
-    // Initialize the devices list
     devices = List.generate(
       5,
       (index) => Device(
         name: 'Device $index',
         id: 'Device${index + 1}',
         connectionType: widget.connectionType,
-        isConnected: false, // Initially all devices are not connected
+        isConnected: false,
       ),
     );
   }

@@ -1,10 +1,11 @@
 class Device {
   final String name;
-  final String id; // Device ID
-  final String connectionType; // Bluetooth or Wi-Fi
+  final String id;
+  final String connectionType;
   bool isConnected;
 
   // Sensor data for the device
+
   double heartRate;
   double spo2;
   double temperature;

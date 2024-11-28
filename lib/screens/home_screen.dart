@@ -106,7 +106,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      'Device Setup',
+                      'Mock Device',
                       style: TextStyle(
                         fontSize: 18,
                         fontWeight: FontWeight.w600,
@@ -183,7 +183,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
               // Real Device Control Section
               Text(
-                'Real-Time Control',
+                'Real-Time Connection',
                 style: TextStyle(
                   fontSize: 18,
                   fontWeight: FontWeight.w600,
