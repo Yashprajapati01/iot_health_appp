@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:iot_health_appp/screens/data_visualization_screen.dart';
 import 'package:iot_health_appp/screens/device_list_screen.dart';
 import 'package:iot_health_appp/utils/theme.dart';
-import 'package:iot_health_appp/widgets/bluetooth.dart';
-import 'package:iot_health_appp/widgets/wifi.dart';
+import 'package:iot_health_appp/screens/bluetooth_scan_screen.dart';
+import 'package:iot_health_appp/screens/wifi_scan_screen.dart';
 
 import 'models/device_model.dart';
 import 'screens/home_screen.dart';
