@@ -28,6 +28,8 @@ Built with **Flutter**, the app is cross-platform, supporting both **Android** a
   - **Bluetooth Connectivity**: `flutter_blue_plus` for Bluetooth management on Android and iOS.
   - **Wi-Fi Connectivity**: `wifi_iot` for managing Wi-Fi-enabled devices.
   - **Permission Handling**: `permission_handler` to request runtime permissions like Bluetooth and Location services.
+  - **Bluetooth Scanning**: `flutter_bluetooth_serial` to request scanning bluetooth devices in the area.
+  - **WiFi Scanning**: `wifi_info_flutter` to request scanning WiFi devices in the area.
 
 - **Data Visualization**:
   - **Syncfusion Flutter Charts** for high-quality, real-time data visualization with smooth updates and interactive UI.
@@ -72,7 +74,7 @@ Follow the instructions below to set up the app on your local machine and get it
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/iot-health-devices.git
+git clone https://github.com/YashPrajapati01/iot-health-devices.git
 cd iot-health-devices
 ```
 2. Install Dependencies
@@ -87,8 +89,13 @@ For Android:
 Ensure that your AndroidManifest.xml includes Bluetooth and Wi-Fi permissions.
 Example permissions:
 ```bash
-<uses-permission android:name="android.permission.BLUETOOTH"/>
-<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
 ```
 4. Run the App
 To run the app on Android or iOS, simply use the following command:
@@ -103,7 +110,7 @@ Once Bluetooth or Wi-Fi is enabled, the app scans for nearby devices and allows 
 3. Real-Time Data:
 After successfully connecting to a device, the app starts fetching data like Heart Rate, SpO2, and Temperature, and displays it in real-time using Syncfusion Flutter Charts.
 4. Add Device:
-Users can add devices by entering a device name and selecting the connection type (Bluetooth or Wi-Fi) through a clean and intuitive dialog.
+Users can add devices by entering a device name and selecting the connection type (Bluetooth or Wi-Fi) through a clean and intuitive dialog for the mock data.
 
 ---
 
