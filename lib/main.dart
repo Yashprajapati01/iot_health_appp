@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:iot_health_appp/screens/data_visualization_screen.dart';
 import 'package:iot_health_appp/screens/device_list_screen.dart';
 import 'package:iot_health_appp/utils/theme.dart';
+import 'package:iot_health_appp/widgets/bluetooth.dart';
+import 'package:iot_health_appp/widgets/wifi.dart';
+
 import 'models/device_model.dart';
 import 'screens/home_screen.dart';
 
@@ -22,6 +25,8 @@ class MyApp extends StatelessWidget {
               connectionType:
                   ModalRoute.of(context)?.settings.arguments as String,
             ), // Device List Screen Route
+        '/bluetooth-scanning': (context) => BluetoothScanScreen(),
+        '/wifi-scanning': (context) => WifiScanScreen(),
         '/data-visualization': (context) => DataVisualizationScreen(
               device: ModalRoute.of(context)?.settings.arguments as Device,
             ), // Data Visualization Screen Route
